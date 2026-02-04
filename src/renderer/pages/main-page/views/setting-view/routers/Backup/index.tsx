@@ -8,6 +8,9 @@ import BackupResume from "@/renderer/core/backup-resume";
 import { useTranslation } from "react-i18next";
 import AppConfig from "@shared/app-config/renderer";
 import { dialogUtil, fsUtil } from "@shared/utils/renderer";
+import { getUserPreference } from "@/renderer/utils/user-perference";
+import dayjs from "dayjs";
+import { getGlobalContext } from "@/shared/global-context/renderer";
 
 
 
@@ -31,9 +34,13 @@ export default function Backup() {
                 });
                 const sheetDetails =
                     await MusicSheet.frontend.exportAllSheetDetails();
+                const pluginSubscription = getUserPreference("subscription") ?? [];
+                const pluginMeta = AppConfig.getConfig("private.pluginMeta") ?? {};
                 const backUp = JSON.stringify(
                     {
                         musicSheets: sheetDetails,
+                        pluginSubscription,
+                        pluginMeta,
                     },
                     undefined,
                     0,
@@ -125,6 +132,10 @@ export default function Backup() {
                     role="button"
                     data-type="normalButton"
                     onClick={async () => {
+                        const { appPath } = getGlobalContext();
+                        const fileName = `MusicFree_Backup_${dayjs().format(
+                            "YYYY-MM-DD_HH-mm-ss",
+                        )}.json`;
                         const result = await dialogUtil.showSaveDialog({
                             properties: ["showOverwriteConfirmation", "createDirectory"],
                             filters: [
@@ -134,12 +145,19 @@ export default function Backup() {
                                 },
                             ],
                             title: t("settings.backup.backup_to"),
+                            defaultPath: fileName,
                         });
                         if (!result.canceled && result.filePath) {
                             const sheetDetails =
                                 await MusicSheet.frontend.exportAllSheetDetails();
+                            const pluginSubscription =
+                                getUserPreference("subscription") ?? [];
+                            const pluginMeta =
+                                AppConfig.getConfig("private.pluginMeta") ?? {};
                             const backUp = JSON.stringify({
                                 musicSheets: sheetDetails,
+                                pluginSubscription,
+                                pluginMeta,
                             });
                             await fsUtil.writeFile(result.filePath, backUp, "utf-8");
                             toast.success(t("settings.backup.backup_success"));

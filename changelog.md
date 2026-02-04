@@ -3,6 +3,19 @@
 
 遵循 [语义化版本 2.0.0](https://semver.org/lang/zh-CN/) 规范。
 
+## [1.1.0] - 2026-02-04
+### 功能新增（备份恢复）
+- 扩展备份恢复功能以支持插件数据
+- 备份时包含插件订阅列表和插件元数据
+- 恢复时支持从 ArrayBuffer 和 ArrayBufferView 解析数据
+- 新增自动生成备份文件名功能，包含时间戳
+- 简化多语言文件中的备份/恢复按钮文本
+
+### 配置与链接更新
+- 更新 CI 配置中的 GitHub Action 引用
+- 移除 Gitee 链接，仅保留 GitHub 地址
+- 更新项目版本号至 1.1.0
+
 ## [1.0.0] - 2026-02-04
 ### 核心更新
 - 发布 v1.0.0 正式版，完成 fork 后的独立维护初始化
@@ -30,5 +43,6 @@
 ---
 
 # 版本号对应说明
+[1.1.0]: https://github.com/573780986/MusicFreeDesktop/releases/tag/v1.1.0
 [1.0.0]: https://github.com/573780986/MusicFreeDesktop/releases/tag/v1.0.0
-[未发布]: https://github.com/573780986/MusicFreeDesktop/compare/v1.0.0...HEAD
+[未发布]: https://github.com/573780986/MusicFreeDesktop/compare/v1.1.0...HEAD

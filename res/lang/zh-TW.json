@@ -351,8 +351,8 @@
       "backup_fail": "備份失敗：{{reason}}",
       "resume_success": "恢復成功~",
       "resume_fail": "恢復失敗：{{reason}}",
-      "backup_music_sheet": "備份歌單",
-      "resume_music_sheet": "恢復歌單",
+      "backup_music_sheet": "備份",
+      "resume_music_sheet": "恢復",
       "webdav_server_url": "URL",
       "username": "用戶名",
       "password": "密碼",
@@ -364,7 +364,7 @@
       "already_latest": "已是最新版本！",
       "check_update": "檢查更新",
       "software_author": "軟件作者：",
-      "open_source_declaration": "源碼：軟件是基於 AGPL3.0 授權的開源軟件。<Github>Github 地址</Github> <Gitee>Gitee 地址</Gitee>",
+      "open_source_declaration": "源碼：軟件是基於 AGPL3.0 授權的開源軟件。<Github>Github 地址</Github>",
       "official_site": "官方網站",
       "mobile_version": "移動版"
     }
