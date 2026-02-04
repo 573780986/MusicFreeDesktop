@@ -32,32 +32,18 @@ export default function About() {
 
             <div className="setting-row about-version">
                 {t("settings.about.software_author")}{" "}
-                <A href="https://github.com/maotoumao">Github@猫头猫</A>
-                <A href="https://space.bilibili.com/12866223">
-                    bilibili@不想睡觉猫头猫
-                </A>
-                <A href="https://twitter.com/upupfun">X@upupfun</A>
+                <A href="https://github.com/573780986">Github@DFPD</A>
             </div>
-            <img className="wx-channel" src={wxChannelImg}></img>
 
             <div className="setting-row about-version">
                 <Trans
                     i18nKey="settings.about.open_source_declaration"
                     components={{
                         Github: (
-                            <A href="https://github.com/maotoumao/MusicFreeDesktop"></A>
+                            <A href="https://github.com/573780986/MusicFreeDesktop"></A>
                         ),
-                        Gitee: <A href="https://gitee.com/maotoumao/MusicFreeDesktop"></A>,
                     }}
                 ></Trans>
-            </div>
-            <div className="setting-row about-version">
-                <A href="http://musicfree.catcat.work/">
-                    {t("settings.about.official_site")}
-                </A>
-                <A href="https://github.com/maotoumao/MusicFree">
-                    {t("settings.about.mobile_version")}
-                </A>
             </div>
         </div>
     );

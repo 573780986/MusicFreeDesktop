@@ -1,7 +1,7 @@
 {
   "name": "musicfree-desktop",
   "productName": "MusicFree",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "一个插件化的音乐播放器",
   "main": ".webpack/main",
   "scripts": {
@@ -12,12 +12,13 @@
     "publish": "electron-forge publish",
     "lint": "eslint ./src --fix",
     "lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "gen-version": "node scripts/generate-version-json.js"
   },
   "keywords": [],
   "author": {
-    "name": "猫头猫",
-    "email": "lhx_xjtu@163.com"
+    "name": "573780986",
+    "email": "573780986@qq.com"
   },
   "license": "GPL",
   "lint-staged": {

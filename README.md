@@ -1,16 +1,4 @@
 # MusicFree 桌面版
-![GitHub Repo stars](https://img.shields.io/github/stars/maotoumao/MusicFreeDesktop) 
-![GitHub forks](https://img.shields.io/github/forks/maotoumao/MusicFreeDesktop)
-![star](https://gitcode.com/maotoumao/MusicFreeDesktop/star/badge.svg)
-
-![GitHub License](https://img.shields.io/github/license/maotoumao/MusicFreeDesktop)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/maotoumao/MusicFreeDesktop/total)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/maotoumao/MusicFreeDesktop)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/maotoumao/MusicFreeDesktop)
-
-<a href="https://trendshift.io/repositories/3961" target="_blank"><img src="https://trendshift.io/api/badge/repositories/3961" alt="maotoumao%2FMusicFreeDesktop | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
----
-
 ## 项目使用约定：
 本项目基于 AGPL 3.0 协议开源，使用此项目时请遵守开源协议。  
 除此外，希望你在使用代码时已经了解以下额外说明：
@@ -30,7 +18,7 @@
 
 ### 下载地址
 
-[飞书云文档](https://r0rvr854dd1.feishu.cn/drive/folder/IrVEfD67KlWZGkdqwjecLHFNnBb?from=from_copylink)
+[GitHub Releases](https://github.com/573780986/MusicFreeDesktop/releases)
 
 ## 特性
 
@@ -150,15 +138,6 @@ config.json 是一个配置文件。
 npm install
 npm start
 ```
-
-## 支持这个项目
-
-如果你喜欢这个项目，或者希望我可以持续维护下去，你可以通过以下任何一种方式支持我;)
-
-1. Star 这个项目，分享给你身边的人；
-2. 关注公众号【一只猫头猫】获取最新信息；
-
-<img src="./src/assets/imgs/wechat_channel.jpg" height="160px" title="微信公众号" style="display:inherit;"/>
 
 ## 截图
 

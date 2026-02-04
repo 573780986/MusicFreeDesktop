@@ -136,9 +136,8 @@ export const themePackStoreBaseUrl = [
 ];
 
 export const appUpdateSources = [
-    "https://gitee.com/maotoumao/MusicFreeDesktop/raw/master/release/version.json",
-    "https://raw.githubusercontent.com/maotoumao/MusicFreeDesktop/master/release/version.json",
-    "https://cdn.jsdelivr.net/gh/maotoumao/MusicFreeDesktop@master/release/version.json",
+    "https://raw.githubusercontent.com/573780986/MusicFreeDesktop/master/release/version.json",
+    "https://cdn.jsdelivr.net/gh/573780986/MusicFreeDesktop@master/release/version.json",
 ];
 
 export enum TrackPlayerSyncType {
